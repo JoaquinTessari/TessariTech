@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessari Tech - Productos</title>
+    <link rel="icon" href="assets/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body class="fondo">
+    <header>
+        <a href="index.html" class="logo" id="menu-icon">Tessari Tech</a>
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon-action">
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </label>
+        <ul class="navlist">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+                <li>
+                    <a class="cart-container" href="compras.html" 
+                        onmouseover="showDropdown(event)" 
+                        onmouseleave="hideDropdown()">
+                        <i class='bx bx-cart'></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                        <div id="cart-dropdown" class="cart-dropdown hidden">
+                            <h3 id="dropdown-title">Productos seleccionados</h3>
+                            <ul id="dropdown-items"></ul>
+                            <p id="dropdown-total"></p>
+                        </div>
+                    </a>
+                </li>
+                
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="contenedor-imagen-3d">
+            <img src="assets/fondoproduc.jpg" alt="Productos 3D" class="imagen-expandida">
+            <h3 class="titulo-imagen-3d">Filamentos 3D</h3>
+        </div>
+
+        <section class="services-section">
+            <!-- Productos -->
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="assets/Filamentos/pla rojo.jpg" alt="Filamento PLA Rojo">
+                    <div class="service-content">
+                        <h2>Printalot PLA! Rojo 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: rojo</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <p>Precio: $17,850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Rojo', 17850)">Agregar</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="assets/Filamentos/pla verde.png" alt="Filamento PLA Verde">
+                    <div class="service-content">
+                        <h2>Printalot PLA! Verde 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: verde</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <h5>Precio Especial:</h5>
+                        <p class="rebaja centro">$ 33.850</p>
+                        <p>Precio: $14.850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Verde', 14850)">Agregar</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="assets/Filamentos/pla azul.jpg" alt="Filamento PLA Azul">
+                    <div class="service-content">
+                        <h2>Printalot PLA! Azul 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: Azul</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <h5>Precio Especial:</h5>
+                        <p class="rebaja centro">$ 27.850</p>
+                        <p>Precio: $17.850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Azul  ',  17850)">Agregar</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="assets/Filamentos/Pla art WOOD-ARRAYAN.jpg" alt="Filamento PLA Art Wood Arrayan">
+                    <div class="service-content">
+                        <h2>Printalot PLA Art! Wood 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: Arrayan</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <p>Precio: $33,850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Art Wood  ',  33850)">Agregar</button>
+                    </div>
+                </div>
+
+
+                <div class="service-item">
+                    <img src="assets/Filamentos/pla Fucsia.jpg" alt="Filamento PLA Art Wood Arrayan">
+                    <div class="service-content">
+                        <h2>Printalot PLA! Fucsia 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: Fucsia</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <h5>Precio Especial:</h5>
+                        <p class="rebaja centro">$ 33.850</p>
+                        <p>Precio: $13.850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Art Wood  ',  13850)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="assets/Filamentos/pla amarillo.jpg" alt="Filamento PLA Art Wood Arrayan">
+                    <div class="service-content">
+                        <h2>Printalot PLA amarillo 1.75mm – Rollo x 1 kg</h2>
+                        <p>Especificaciones Técnicas:</p>
+                        <p>Marca:PrintaLot</p>
+                        <p>– color: amarillo</p>
+                        <p>– Diámetro: 1.75mm</p>
+                        <p>– Precisión: 0,03mm</p>
+                        <p>– Medida total del rollo: 335mt</p>
+                        <p>– Densidad: 1,24 g/cm³</p>
+                        <h5>Precio Especial:</h5>
+                        <p class="rebaja centro">$ 33.850</p>
+                        <p>Precio: $20.850</p>
+                        <button class="compra-btn" onclick="add('Filamento PLA Art Wood  ',  20850)">Agregar</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrito Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total"></p>
+        <button onclick="pay()">Pagar</button>
+        <button onclick="hideCart()">Cerrar</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Sección de Mapa -->
+            <div class="footer-section map-container">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.08435776968!2d-57.99436976372424!3d-34.920430869485585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1730483485646!5m2!1ses!2sar" 
+                allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Dirección: La Plata</p>
+                <p>Teléfono: +54 221 540-6284</p>
+                <p>Email: tessari.tech@gmail.com</p>
+            </div>
+            
+
+
+            
+            <!-- Sección de Navegación -->
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="servicios.html">servicios</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="acercade.html">acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://www.instagram.com/tessari.tech/"><i class="ri-instagram-line"></i>   instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@tessari.tech"><i class="ri-tiktok-fill"></i>   Tik Tok</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sección de Derechos Reservados -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tessari Tech. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
